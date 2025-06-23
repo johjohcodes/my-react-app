@@ -8,7 +8,8 @@ function Todo({task, description, togglePopUp}) {
         <div className="todo-item">
             <h2>
             {task} {description}</h2>
-            <button onClick={() => togglePopUp()
+            <button onClick={() => togglePopUp
+            ()
                 
                 
             }>delete</button>

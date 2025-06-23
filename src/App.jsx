@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { use, useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -21,7 +21,21 @@ function App() {
   //   popUpOpen = !popUpOpen;  
   //   console.log(popUpOpen);
   }
+  useEffect(() => {
+    console.log("when components mount");
+    // this will run only when the component mounts
+  },[])
   
+  useEffect(() => {
+    console.log(`when components mount AND ${popUpOpen} changes`);
+  },[popUpOpen]); // this will run only when popUpOpen changes
+
+    useEffect(() => {
+      console.log("on every render");
+      
+    })
+
+    
   
   return (
     <>
@@ -63,5 +77,6 @@ topics learned react
 2. props
 3. eventhandlers onchange, onclick, onsubmit onClose
 4. react hooks useState : creating state variables
+5. useeffect hooks
 
 */  

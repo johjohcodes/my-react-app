@@ -25,7 +25,7 @@ function ArrayCounter() {
 export default ArrayCounter;
 /*
  react useState
- string  : useState('joe')
+ string  : useState('   joe')
  number  : useState(0)
     boolean : useState(true)
 

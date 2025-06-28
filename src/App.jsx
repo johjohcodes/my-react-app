@@ -8,6 +8,9 @@ import PopUp from './components/popUp'
 // import Counter from './components/counter'
 import ArrayCounter from './components/ArryCounter'
 
+import IconGrid from './components/IconGrid.jsx'
+
+
 
 function App() {
   // creating variables in react
@@ -40,6 +43,7 @@ function App() {
   return (
     <>
         <ArrayCounter/>
+        <IconGrid/>
        <TodoTitle/>
        <div>
         {/* <input type="text" onChange={(event)=>{
